@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Los25</string>
     <string name="title_item_detail">Item Detail</string>
+    <string name="disclaimer_title">Sobre esta app</string>
+    <string name="disclaimer_text">Esta es la lista de personas que pisotearon las reglas que rigen los cambios a la Constitución Nacional de nuestro pais. Se están básicamente burlando de mi y de vos. \n\nNo podemos dejar que sigan impunes estos bandidos. Pero me parece que les resulta muy fácil esconderse entre la multitud, sacar la lista completa de los nombres de TODOS los senadores pro-enmienda fue algo que me costó bastante. Asi que me parece importante que todos los ciudadanos no solamente conozcan por nombre y apellido, sino que también por fotos a estos criminales.</string>
+    <string name="button_ok">Aceptar</string>
 </resources>
