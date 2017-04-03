@@ -1,12 +1,15 @@
 package com.senarratas.los25;
 
 import android.app.Activity;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.senarratas.los25.data.Profiles;
@@ -18,6 +21,7 @@ import com.senarratas.los25.data.Profiles;
  * on handsets.
  */
 public class ItemDetailFragment extends Fragment {
+    public static final String TAG = "ItemDetailFragment";
     /**
      * The fragment argument representing the item ID that this fragment
      * represents.
@@ -41,15 +45,12 @@ public class ItemDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments().containsKey(ARG_ITEM_ID)) {
-            // Load the dummy mName specified by the fragment
-            // arguments. In a real-world scenario, use a Loader
-            // to load mName from a mName provider.
             mItem = Profiles.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
 
             Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null) {
-                appBarLayout.setTitle(mItem.mName);
+                appBarLayout.setTitle(mItem.party);
             }
         }
     }
@@ -61,7 +62,20 @@ public class ItemDetailFragment extends Fragment {
 
         // Show the dummy mName as text in a TextView.
         if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
+            String nameTemplate = "Nombre: %s";
+            String emailLinkTemplate = "Email : <a href=\"maito:%s?subject=No-a-la-enmienda-de-la-constitución\">%s</a>";
+
+            String formattedName = String.format(nameTemplate, mItem.mName);
+            String formattedEmail = String.format(emailLinkTemplate, mItem.email, mItem.email);
+
+            TextView nameTV = (TextView) rootView.findViewById(R.id.name);
+            TextView emailTV = (TextView) rootView.findViewById(R.id.item_detail);
+
+            nameTV.setText(formattedName);
+            emailTV.setMovementMethod(LinkMovementMethod.getInstance());
+            emailTV.setText(Html.fromHtml(formattedEmail));
+
+            ((ImageView) rootView.findViewById(R.id.profile_hd)).setImageResource(Profiles.PROFILE_PICTURES_HD[Integer.valueOf(mItem.id)]);
         }
 
         return rootView;
