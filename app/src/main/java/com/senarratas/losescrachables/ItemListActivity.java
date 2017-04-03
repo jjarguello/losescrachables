@@ -1,4 +1,4 @@
-package com.senarratas.los25;
+package com.senarratas.losescrachables;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -17,7 +17,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.senarratas.los25.data.Profiles;
+import com.senarratas.losescrachables.data.Profiles;
 
 import java.util.List;
 

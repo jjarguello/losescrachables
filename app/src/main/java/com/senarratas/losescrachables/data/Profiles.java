@@ -1,6 +1,6 @@
-package com.senarratas.los25.data;
+package com.senarratas.losescrachables.data;
 
-import com.senarratas.los25.R;
+import com.senarratas.losescrachables.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

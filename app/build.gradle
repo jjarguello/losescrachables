@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
     defaultConfig {
-        applicationId "com.senarratas.los25"
+        applicationId "com.senarratas.losescrachables"
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 1

@@ -23,7 +23,7 @@
         android:layout_below="@id/profile_hd"
         android:padding="16dp"
         style="?android:attr/textAppearanceLarge"
-        tools:context="com.senarratas.los25.ItemDetailFragment"
+        tools:context=".ItemDetailFragment"
         tools:text="Nombre"/>
     <TextView
         android:id="@+id/item_detail"
@@ -34,6 +34,6 @@
         android:textIsSelectable="true"
         android:autoLink="email"
         style="?android:attr/textAppearanceLarge"
-        tools:context="com.senarratas.los25.ItemDetailFragment"
+        tools:context=".ItemDetailFragment"
         tools:text="Email"/>
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.senarratas.los25;
+package com.senarratas.losescrachables;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

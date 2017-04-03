@@ -1,4 +1,4 @@
-package com.senarratas.los25;
+package com.senarratas.losescrachables;
 
 import org.junit.Test;
 
