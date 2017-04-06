@@ -195,10 +195,10 @@ public class Profiles {
     private static Profile createProfile(int position) {
         String party = "";
         if(position < 8){
-            party = "PRLA";
+            party = "PLRA";
         }else if(position < 19){
             party = "ANR";
-        }else if(position < 22){
+        }else if(position < 21){
             party = "UNACE";
         }else {
             party = "Frente Guasú";
