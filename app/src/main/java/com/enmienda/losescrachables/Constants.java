@@ -1,4 +1,4 @@
-package com.senarratas.losescrachables;
+package com.enmienda.losescrachables;
 
 /**
  * Class used to hold constants.

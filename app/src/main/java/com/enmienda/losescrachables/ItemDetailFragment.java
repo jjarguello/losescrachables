@@ -1,4 +1,4 @@
-package com.senarratas.losescrachables;
+package com.enmienda.losescrachables;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.senarratas.losescrachables.data.Profiles;
+import com.enmienda.losescrachables.data.Profiles;
 
 /**
  * A fragment representing a single Item detail screen.

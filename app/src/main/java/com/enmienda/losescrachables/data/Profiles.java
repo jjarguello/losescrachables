@@ -1,6 +1,6 @@
-package com.senarratas.losescrachables.data;
+package com.enmienda.losescrachables.data;
 
-import com.senarratas.losescrachables.R;
+import com.enmienda.losescrachables.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

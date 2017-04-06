@@ -1,4 +1,4 @@
-package com.senarratas.losescrachables;
+package com.enmienda.losescrachables;
 
 import android.content.Intent;
 import android.os.Bundle;
